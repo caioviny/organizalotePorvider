@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OrganizadorDeLotesDialogBase</class>
+ <widget class="QDialog" name="OrganizadorDeLotesDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>213</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OrganizadorDeLotes</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>321</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="conexaoLabel">
+      <property name="text">
+       <string>Conexão Postgres</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="cmbConexao"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="ordemAntigaLabel">
+      <property name="text">
+       <string>Ordem Antiga</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QSpinBox" name="spinOrdemPrimeira"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QSpinBox" name="spinInsQuadra">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="maximum">
+       <number>9999999</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QPushButton" name="btnSelecionarQuadra">
+      <property name="toolTip">
+       <string>Clique aqui e depois em uma quadra no mapa</string>
+      </property>
+      <property name="text">
+       <string>Selecionar Quadra</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <widget class="QPushButton" name="btnExecutar">
+      <property name="text">
+       <string>Organizar Ordem</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="spinInsQuadra_2">
+      <property name="text">
+       <string>Incrição da Quadra</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0" colspan="2">
+     <widget class="QPushButton" name="btnExcluirNovaOrdem">
+      <property name="text">
+       <string>Restaurar Ordem Original</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
